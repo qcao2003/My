@@ -1,0 +1,28 @@
+{
+  "RECORDS": [
+    {
+      "Username": "root",
+      "name": "曹建斌",
+      "type": "out",
+      "item": "按动啫喱笔芯",
+      "number": "1",
+      "time": "15/3/2022 17:47:07"
+    },
+    {
+      "Username": "root",
+      "name": "TEST",
+      "type": "out",
+      "item": "按动啫喱笔芯",
+      "number": "1",
+      "time": "15/3/2022 17:48:12"
+    },
+    {
+      "Username": "root",
+      "name": "曹建斌",
+      "type": "out",
+      "item": "钢笔",
+      "number": "1",
+      "time": "7/5/2022 10:23:48"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link th:href="@{css/style.css}" rel="stylesheet">
+</head>
+<body>
+    UPLoading onedata
+    <img th:src="${filePath}">
+    <form action="/oneUploadimg" method="post" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="上传">
+    </form>
+    UPloading Mutidata
+    <form action="/MultiUploadimg" method="post" enctype="multipart/form-data">
+        <input type="file" name="multifiles" multiple="multiple">
+        <input type="submit" value="上传">
+    </form>
+    <a th:href="@{/Checkimg}" method="get">查询数据库图片</a>
+</body>
+</html>

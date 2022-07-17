@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link th:href="@{css/style.css}" rel="stylesheet">
+    <link th:href="@{css/select2.min.css}" rel="stylesheet">
+    <script th:src="@{js/select2.full.min.js}"></script>
+    <script type="text/javascript" th:inline="javascript">
+        $(document).ready(function() { $("#whitelist").select2(); });
+    </script>
+</head>
+<body>
+    <form th:action="@{/index}" method="post">
+        <span>账号</span><input type="text" name="username"><br>
+        <span>密码</span><input type="text" name="password"><br>
+        <select th:id="whitelist" class="selectpicker show-tick form-control select2 select2-drop-mask">
+            <option value="test1">test1</option>
+            <option value="test2">test2</option>
+        </select>
+        <input id="dataitem" list="DATALIST"/>
+        <datalist id="DATALIST">
+            <option>大白菜</option>
+            <option>胡萝卜</option>
+            <option>空心菜</option>
+            <option>洋葱</option>
+        </datalist>
+
+        <p><input type="submit" value="登录" /> <input type="reset" value="重填" /></p>
+    </form>
+</body>
+</html>

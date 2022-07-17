@@ -1,0 +1,13 @@
+.login-title{
+    font-size:45px;
+    color:red;
+}
+
+body {
+    height: 30px;
+    line-height: 30px;
+    background-color: #ffecf7;
+    text-align:center;
+    padding-top: 400px;
+    padding-bottom: 30px;
+}
